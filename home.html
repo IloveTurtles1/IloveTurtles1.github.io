@@ -23,27 +23,6 @@
 
   <script nomodule="" src="https://polyfill-fastly.io/v3/polyfill.min.js?features=fetch"></script>
 
-  <!-- Performance API Polyfills -->
-  <script>
-  (function () {
-    var noop = function noop() {};
-    if ("performance" in window === false) {
-      window.performance = {};
-    }
-    window.performance.mark = performance.mark || noop;
-    window.performance.measure = performance.measure || noop;
-    if ("now" in window.performance === false) {
-      var nowOffset = Date.now();
-      if (performance.timing && performance.timing.navigationStart) {
-        nowOffset = performance.timing.navigationStart;
-      }
-      window.performance.now = function now() {
-        return Date.now() - nowOffset;
-      };
-    }
-  })();
-  </script>
-
   <!-- Globals Definitions -->
   <script>
     (function () {
@@ -58,10 +37,6 @@
     })();
   </script>
 
-
-  <!-- Essential Viewer Model -->
-  <script type="application/json" id="wix-essential-viewer-model">{"fleetConfig":{"fleetName":"thunderbolt-renderer-gradual","type":"Rollout","code":1},"mode":{"qa":false,"enableTestApi":false,"debug":false,"ssrIndicator":false,"ssrOnly":false,"siteAssetsFallback":"enable"},"componentsLibrariesTopology":[{"artifactId":"editor-elements","namespace":"wixui","url":"https:\/\/static.parastorage.com\/services\/editor-elements\/1.13238.0"},{"artifactId":"editor-elements","namespace":"dsgnsys","url":"https:\/\/static.parastorage.com\/services\/editor-elements\/1.13238.0"}],"siteFeaturesConfigs":{"sessionManager":{"isRunningInDifferentSiteContext":false}},"language":{"userLanguage":"en"},"siteAssets":{"clientTopology":{"mediaRootUrl":"https:\/\/static.wixstatic.com","staticMediaUrl":"https:\/\/static.wixstatic.com\/media","moduleRepoUrl":"https:\/\/static.parastorage.com\/unpkg","fileRepoUrl":"https:\/\/static.parastorage.com\/services","siteAssetsUrl":"https:\/\/siteassets.parastorage.com","pageJsonServerUrls":["https:\/\/pages.parastorage.com","https:\/\/staticorigin.wixstatic.com","https:\/\/fallback.wix.com\/wix-html-editor-pages-webapp\/page"],"pathOfTBModulesInFileRepoForFallback":"wix-thunderbolt\/dist\/"}},"siteFeatures":["assetsLoader","businessLogger","captcha","clickHandlerRegistrar","commonConfig","componentsLoader","componentsRegistry","consentPolicy","cyclicTabbing","environmentWixCodeSdk","environment","locationWixCodeSdk","navigationManager","navigationPhases","ooi","pages","panorama","renderer","reporter","router","scrollRestoration","seoWixCodeSdk","seo","sessionManager","siteMembersWixCodeSdk","siteMembers","siteScrollBlocker","siteWixCodeSdk","stores","structureApi","thunderboltInitializer","tpaCommons","translations","usedPlatformApis","warmupData","windowMessageRegistrar","windowWixCodeSdk","wixCustomElementComponent","wixEmbedsApi","componentsReact","platform"],"site":{"externalBaseUrl":"https:\/\/turtlesasl.wixsite.com\/fhub","isSEO":false},"media":{"staticMediaUrl":"https:\/\/static.wixstatic.com\/media","mediaRootUrl":"https:\/\/static.wixstatic.com\/","staticVideoUrl":"https:\/\/video.wixstatic.com\/"},"requestUrl":"https:\/\/turtlesasl.wixsite.com\/fhub","rollout":{"siteAssetsVersionsRollout":false,"isDACRollout":0,"isTBRollout":true},"commonConfig":{"brand":"wix","host":"VIEWER","bsi":"","consentPolicy":{},"consentPolicyHeader":{},"siteRevision":"10","renderingFlow":"NONE","language":"en","locale":"en-us"},"interactionSampleRatio":0.01,"dynamicModelUrl":"https:\/\/turtlesasl.wixsite.com\/fhub\/_api\/v2\/dynamicmodel","accessTokensUrl":"https:\/\/turtlesasl.wixsite.com\/fhub\/_api\/v1\/access-tokens","isExcludedFromSecurityExperiments":false,"experiments":{"specs.thunderbolt.hardenEncodingDecoding":true,"specs.thunderbolt.hardenFetchAndXHR":true,"specs.thunderbolt.hardenTimeout":true}}</script>
-  <script>window.viewerModel = JSON.parse(document.getElementById('wix-essential-viewer-model').textContent)</script>
 
   
     <script data-url="https://static.parastorage.com/services/wix-thunderbolt/dist/handleAccessTokens.inline.ffbf42a1.bundle.min.js">(()=>{"use strict";const e=e=>"string"==typeof e?decodeURIComponent(e).toLowerCase().trimStart():e,t="client-session-bind",o="client-binding",s="tbReady",r="security_overrideGlobals",n=[t,o,"svSession","smSession","server-session-bind","wixSession2"].map((e=>e.toLowerCase())),i=Object.getOwnPropertyDescriptor(Document.prototype,"cookie"),{isExcludedFromSecurityExperiments:c,experiments:a,siteFeaturesConfigs:d,accessTokensUrl:l}=window.viewerModel,m=l,u=document.cookie.split(";").map((e=>e.trim())).filter((e=>e.startsWith(t)))[0]?.split("=")[1],p={};if(u&&(p[o]=u,(()=>{const e=`${t}=; domain=${location.hostname}; max-age=0; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT`;i.set.call(document,e)})()),a["specs.thunderbolt.hardenFetchAndXHR"]&&!c){let w=fetch;function f(e){const{logger:t}=e.detail;try{window.tb.init({fetch:w,fetchHeaders:p})}catch(e){const o=new Error("TB003");t.captureError(o,{tags:{feature:"thunderbolt-security"}}),t.meter(`${r}_${o.message}`,{paramsOverrides:{evid:"26",errorType:r,eventString:o.message}}),window?.viewerModel?.mode.debug&&console.error(e)}finally{removeEventListener(s,f),w=fetch}}addEventListener(s,f)}else window.fetchDynamicModel=()=>d.sessionManager.isRunningInDifferentSiteContext?Promise.resolve({}):fetch(m,{credentials:"same-origin",headers:p}).then((function(e){if(!e.ok)throw new Error(`[${e.status}]${e.statusText}`);return e.json()})),window.dynamicModelPromise=window.fetchDynamicModel();Object.defineProperty(document,"cookie",{get:()=>i.get.call(document).split(";").filter((t=>{const o=e(t.split("=")[0]);return!n.map((e=>e.toLowerCase())).includes(o)})).join(";").trimStart(),set(t){const o=e(t.split(";")[0]);n.every((e=>!o.startsWith(e.toLowerCase())))&&i.set.call(document,t)},enumerable:!0,configurable:!1})})();
