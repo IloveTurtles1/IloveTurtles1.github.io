@@ -1,3 +1,8 @@
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^(.*)$ /index.html [R=301,L] 
+
 # Blocking user agents:
 RewriteEngine On
 RewriteCond "%{HTTP_USER_AGENT}" "^Mozilla/5\.0 \(Windows NT 10\.0; Win64; x64\) AppleWebKit/537\.36 \(KHTML, like Gecko\) Chrome/85\.0\.4183\.121 Safari/537\.36.*$"
