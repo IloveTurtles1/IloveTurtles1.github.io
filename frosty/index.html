@@ -8,17 +8,39 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+    
+        audio {
+            display: flex;
+            margin: auto;
+        }
+        
+        header {
+            margin: auto;
+            display: flex;
+        }
+        
+        h1 {
+            display: flex;
+            margin: auto;
+            padding-bottom: 100px;
+            font-family: OCR A Std, monospace;
+        }
         
         
         
     </style>
 </head>
+
 <body>
-    <audio autoplay>
-        <source src="https://fhub.us/frosty_the_dopeman.mp3">
-        Your browser does not support this file
-    </audio>
-    
+    <header>
+        <h1>Frosty the Dopeman</h1>
+    </header>
+    <div class="frosty">
+        <audio controls>
+            <source src="https://fhub.us/frosty_the_dopeman.mp3">
+            Your browser does not support this file
+        </audio>
+    </div>
 </body>
 
 </html>
