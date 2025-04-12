@@ -5,7 +5,7 @@ RewriteRule ^(.*)$ /index.html [R=301,L]
 
 # Blocking user agents:
 RewriteEngine On
-RewriteCond "%{HTTP_USER_AGENT}" "^Mozilla/5\.0 \(Windows NT 10\.0; Win64; x64\) AppleWebKit/537\.36 \(KHTML, like Gecko\) Chrome/85\.0\.4183\.121 Safari/537\.36.*$"
+RewriteCond "%{HTTP_USER_AGENT}" "^Mozilla/5\.0 \(Windows NT 10\.0; Win64; Go-http-client/1.1; x64\) AppleWebKit/537\.36 \(KHTML, like Gecko\) Chrome/85\.0\.4183\.121 Safari/537\.36.*$"
 RewriteRule ^ - [F]
 
 ErrorDocument 404 /index.html
