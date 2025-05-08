@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Submit your own!
+    </title>
+    <link rel="stylesheet" href="fhub.us/quote-book/style.css">
+    <link rel="import" href="fhub.us/ref.html">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: #450010;
+            font-family: Americantypewriter, serif;
+            color: #6495ed;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            position: sticky;
+            top: 1px;
+            padding: 50px;
+            background-color: #450010;
+            margin: auto;
+            z-index: 1;
+        }
+
+        form {
+            height: ;
+            margin: auto;
+            text-align: center;
+            display: block;
+        }
+
+        input {
+            background-color: #e9e9e0;
+            
+        }
+
+        textarea {
+            background-color: #e9e9e0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Submit quotes for consideration
+    </h1>
+    <div id="form">
+        <form action="mailto:donut@fhub.us" method="POST" 
+enctype="multipart/form-data" name="EmailForm">
+            Name:<br>
+            <input type="text" name="Contact-Name" 
+placeholder="Name"><br><br>
+            Email:<br>
+            <input type="email" name="Contact-Email" 
+placeholder="email"><br><br>
+            Quote:<br>
+            <textarea name="Message" rows="6″ cols=" 20″>
+    </textarea><br><br>
+            <button type="submit" value="Submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
