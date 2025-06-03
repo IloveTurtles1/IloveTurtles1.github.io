@@ -1,4 +1,5 @@
-@font-face {
+    
+    @font-face {
     font-family: 'donut'; 
     src: url('fonts/donut.ttf2') format('woff2'), 
          url('fonts/donut.ttf') format('woff'); 
@@ -13,7 +14,12 @@
             text-align: center;
         }
         
-        img.logo {
+         h1 {
+            font-family: cursive;
+            font-size: 40px;
+        }
+        
+        .logo {
             position: absolute; 
             height: 70px; 
             width: 70px; 
@@ -28,36 +34,43 @@
 
         nav {
             margin-top: 20px;
-            font-size: 10px text-align: justify;
+            font-size: 10px;
+            margin: auto;
+            background-color: ;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: #e0e0e9;
+            border-radius: 10px;
         }
 
         nav ul {
             list-style: none;
-            padding: 0;
-            display: flex;
+            align-items: center;
             justify-content: center;
-            border: 1px solid black;
+            flex-wrap: wrap;
+            display: flex;
+            max-width: 90%;
         }
 
         nav ul li {
-            padding: 10px;
             border-left: 1px solid black;
-            border-right: 1px thin black;
             font-family: cursive;
+            padding: 1%;
+            flex-grow: 2;
+            width: 100px;
+            max-width: 100px;
         }
 
-        nav ul li:first-child {
-            border: none;
+        nav ul li:last-child {
+            width: 99px;
+            max-width: 99px;
+            border-right: 1px solid black;
         }
 
         nav ul li a {
             text-decoration: none;
             color: black;
-            font-size: 14px;
+            font-size: 13px;
             font-family: cursive;
-        }
-
-        h1 {
-            font-family: cursive;
-            font-size: 40px;
         }
