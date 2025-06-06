@@ -1,0 +1,13 @@
+
+     .picture {
+        flex-wrap: wrap;
+        place-content: space-around;
+     }
+      
+      .picture img {
+          max-height: 200px;
+          max-width: 400px;
+          padding: 5px;
+          scale: 100%;
+      }
+      
