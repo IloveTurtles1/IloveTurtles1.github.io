@@ -18,7 +18,7 @@
             z-index: 1;
         }
 
-        .quotes li {
+        li {
             color: #6495ed;
             position: sticky;
             top: 200px;
@@ -30,14 +30,11 @@
             margin: auto;
             list-style: none;
         }
-
-        li a {
-            color: #6495ed;
-        }
         
-        .quotes {
+        ul {
             padding-bottom: 100px;
         }
+        
         
         h4 {
             position: sticky;
@@ -46,6 +43,7 @@
             z-index: 1;
         }
 
+        
         a {
             color: #9495ed;
             text-decoration: none;
