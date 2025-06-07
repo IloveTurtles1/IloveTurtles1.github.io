@@ -14,7 +14,7 @@
             text-align: center;
         }
         
-         h1 {
+         h1 .header {
             font-family: cursive;
             font-size: 40px;
         }
@@ -36,11 +36,10 @@
             margin-top: 20px;
             font-size: 10px;
             margin: auto;
-            background-color: ;
             width: 100%;
             display: flex;
             justify-content: center;
-            background: #e0e0e9;
+            background: #004535;
             border-radius: 10px;
         }
 
