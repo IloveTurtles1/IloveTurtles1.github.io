@@ -6,11 +6,34 @@
   <link rel="stylesheet" href="https://fhub.us/style.css">
     <link rel="stylesheet" href="https://fhub.us/pictures/style.css">
   <title>Pictures</title>
+    <style>
+    
+        #top {
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .bottom {
+        }
+        
+        .bottom p {
+            background-color: #e9e0e7;
+            display: inline-block;
+            padding: 15px;
+            border-radius: 75px;
+            text-align: right;
+        }
+        
+    </style>
 </head>
     
 <body>
-    
-    <h1 class="header"><a href="https://fhub.us/pictures" >Pictures</a></h1>
+    <div id=top>
+    </div>
+    <h1 id="header" class="header"><a href="https://fhub.us/pictures" >Pictures</a></h1>
   <div class="logo">
         <a href="https://fhub.us"><img class="logo" src="https://fhub.us/favicon.ico"></a>
     </div>
@@ -43,10 +66,11 @@
             <li>
                 <a href="https://fhub.us/onlyfans">OF</a>
             </li>
-
+            <li>
+                <a href=#last-image>End of page</a>
+            </li>
         </ul>
     </nav>
-    <p>
     <br>
     
     <p>Some pictures i took :)</p><br>
@@ -70,7 +94,12 @@
 <img src="https://fhub.us/pictures/17.jpeg"/>
 <img src="https://fhub.us/pictures/18.jpeg"/>
 <img src="https://fhub.us/pictures/19.jpeg"/>
-<img src="https://fhub.us/pictures/20.jpeg"/>
+<img id="last-image" src="https://fhub.us/pictures/20.jpeg"/>
+    </div>
+    <div class="bottom">
+        <p>
+            <a href=#top>To top</a>
+        </p>
     </div>
     </body>
 </html>
