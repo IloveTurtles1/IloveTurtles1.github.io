@@ -13,7 +13,8 @@
             background-color: #e9e9e0;
             text-align: center;
             font-family: chalkduster;
-        }
+            overflow: hidden;
+}
         
          h1 .header {
             font-family: cursive;
@@ -108,4 +109,4 @@
         .dropdown-content a:hover {background-color: #cbc3c9;}
 
         /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {display: block; margin-top: 43px; background-color: #e9e0e7;}
+        .dropdown:hover .dropdown-content {display: block; margin-top: auto; background-color: #e9e0e7;}
