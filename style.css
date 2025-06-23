@@ -68,6 +68,10 @@
             border-right: 1px solid black;
         }
 
+        nav ul li.dropitem {
+            border-right: none;
+        }
+
         nav ul li a {
             text-decoration: none;
             color: black;
@@ -75,7 +79,7 @@
             font-family: cursive;
         }
 
-          .dropdown {
+        .dropdown {
           margin: inherit;
           display: inherit;
         }
@@ -87,6 +91,9 @@
           background-color: white;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           z-index: 1;
+          max-height: 325px;
+          overflow: auto;
+          scrollbar-width: thin;
         }
 
         /* Links inside the dropdown */
