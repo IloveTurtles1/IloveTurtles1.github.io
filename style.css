@@ -1,4 +1,4 @@
-         @font-face {
+@font-face {
     font-family: 'donut'; 
     src: url('fonts/donut.ttf2') format('woff2'), 
          url('fonts/donut.ttf') format('woff'); 
@@ -6,16 +6,6 @@
     font-style: normal;
 }
     
-    @keyframes dropdown {
-        0% {opacity: 0%;}
-        100% {opacity: 100%;}
-    }
-    
-    @keyframes hover {
-        0% {background: #e0e0e9}
-        100% {background: #d0d0d9}
-    }
-
         body {
             background-color: #e9e9e0;
             text-align: center;
@@ -69,6 +59,7 @@
             max-width: 150px;
             min-height: 50px;
             align-content: center;
+            transition-duration: 0.3s;
         }
 
         nav ul li:last-child {
@@ -87,8 +78,6 @@
     
     nav ul li:hover {
         background: #d0d0d9;
-        animation-name: hover;
-        animation-duration: 0.3s;
     }
     
         .dropdown {
@@ -97,8 +86,9 @@
 
         /* Dropdown Content (Hidden by Default) */
         .dropdown-content {
-          display: none;
-          position: absolute;
+          display: flex;
+          flex-direction: column;
+          opacity: 0%;
           background-color: white;
           z-index: 1;
           max-height: 325px;
@@ -107,6 +97,7 @@
           border-radius: 10px;
           font-family: chalkduster;
           font-weight: bold;
+          transition-duration: 1s;
         }
 
         /* Links inside the dropdown */
@@ -118,6 +109,7 @@
           border-radius: 20px;
           background: #e9e0e7;
           margin: 0px;
+          transition-duration: 0.3s;
         }
 
         .dropdown-content a:hover {
@@ -130,7 +122,5 @@
             flex-direction: column; 
             margin-top: auto; 
             background: #e9e0e7; 
-            animation-name: dropdown; 
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
+            opacity: 100%;
     }
