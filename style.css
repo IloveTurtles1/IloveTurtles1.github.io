@@ -86,7 +86,7 @@
 
         /* Dropdown Content (Hidden by Default) */
         .dropdown-content {
-          display: flex;
+          position: absolute;
           flex-direction: column;
           opacity: 0%;
           background-color: white;
