@@ -5,6 +5,13 @@
 	     --border: 30px;
              --red: #450010;
         }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
             
          @font-face {
              font-family: 'donut';
