@@ -15,8 +15,38 @@
             top: 0px;
             left: 0px;
         }
+
+        ol {
+            display: inline-flex;
+            list-style: none;
+            font-size: 20px;
+        }
         
-        .bottom {
+        ol li {
+            margin-right: 1px;
+            margin-left: 1px;
+        }
+        
+        li.first {
+            border-right: 2px solid gray;
+            padding: 10px;
+        }
+        
+        li.first a,
+        li.second a {
+            padding: 10px;
+            border-radius: var(--border);
+            transition-duration: 0.3s;
+        }
+        
+        li.second {
+            border-left: 2px solid gray;
+            padding: 10px;
+        }
+        
+        li.second a:hover,
+        li.first a:hover {
+            background: #b9b9b0;
         }
         
         .bottom p {
@@ -37,6 +67,10 @@
   <div class="logo">
         <a href="https://fhub.us"><img class="logo" src="https://fhub.us/favicon.ico"></a>
     </div>
+    <ol>
+        <li class="first"><a href="https://fhub.us/pictures/maui">Maui</a></li>
+        <li class="second"><a href="https://fhub.us/pictures/yellowstone">Yellowstone</a></li>
+    </ol>
     <nav>
         <ul>
             <li>
@@ -106,7 +140,7 @@
     </nav>
     <br>
     
-    <p>Some pictures i took :)</p><br>
+    <!--<p>Some pictures i took :)</p><br>
 <div class="picture">
 <img src="https://fhub.us/pictures/1.jpeg"/>
 <img src="https://fhub.us/pictures/2.jpeg"/>
@@ -133,7 +167,7 @@
         <p>
             <a href=#top>To top</a>
         </p>
-    </div>
+    </div> -->
     </body>
 </html>
 
