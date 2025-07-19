@@ -1,9 +1,13 @@
         :root {
-             --nav: #e0e0e9;
-             --navHover: #d0d0d9;
-             --white: #e9e9e0;
+             --nav: #E0E0E9;
+             --navHover: #D0D0D9;
+             --white: #E9E9E0;
 	     --border: 30px;
              --red: #450010;
+	     --subnavHover: #B9B9B0;
+	     --blue: #B0FCE3;
+             --orange: #FFC999;
+	     --purple: #C7C4E9;
         }
 
 #top {
