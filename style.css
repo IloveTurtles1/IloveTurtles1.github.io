@@ -6,6 +6,14 @@
              --red: #450010;
         }
 
+#top {
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
