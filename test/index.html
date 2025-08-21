@@ -10,51 +10,35 @@
     <style>
         
         :root {
---nav: 	 	#e0e0e9;
+--nav:      #e0e0e9;
 --navHover: #D0D0D9;
---white:	#a4a98040;
---border:	30px;
---red: 	 	#e9c4b7;
---redHover: #d9c4c7;
---subnavHover:	#B9B9B0;
---blue:		#a0c0cc;
---orange:	#caa949;
---purple:	#c7b0cc;
---green: 	#a4a980c1;
+--white:    #a4a98040;
+--border:   30px;
+--red:      #e9c4b7;
+--dred: #a9344a;
+--subnavHover:  #B9B9B0;
+--blue:     #a0c0cc;
+--dblue: #a0c0cc;
+--yellow:   #caa949;
+--dyellow: #caa949;
+--purple:   #c7b0cc;
+--dpurple: #513141;
+--green:    #a4a980;
+--dgreen: #a4a980;
 --greenHover: #a4a980;
         }
         
-        dl {
-            background: white;
-            height: 200px;
-            width: 25%;
-            margin: 50px;
-            border-radius: var(--border);
-            padding: 20px;
-            transition-duration: 0.3s;
-        }
-        
-        dl.red {
-            background: #e9c4b7;
-            box-shadow: 40px 60px var(--red);
-        }
-        
-        dl.green {
-            background: var(--green);
+        th {
+            width: 150px;
         }
 
-        dl.blue {
-            background: #a0c0cc;
-            box-shadow: 10px 10px var(--blue);
+        td {
+            height: 100px;
         }
         
-        dl.orange {
-            background: var(--orange)
-        }
-        
-        dl.purple {
-            background: #c7b0cc;
-            box-shadow: 40px 60px var(--purple);
+        td.green {
+            background: var(--green);
+            
         }
         
         div {
@@ -75,7 +59,7 @@
    body {
     background:  !important;
   } 
-           	
+            
             :root {
                 --red: #a9344a !important;
                 --purple: #513141 !important;
@@ -211,16 +195,6 @@
     </style>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BFC25CNJ7M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BFC25CNJ7M');
-</script>
-
 <body>
         <div class="logo">
         <a href="https://fhub.us"><img class="logo" src="https://fhub.us/favicon.ico"></a>
@@ -283,7 +257,7 @@
                 <a href="https://fhub.us/onlyfans">OF</a>
             </li>
             <div class="dropdown">
-            	<li>
+                <li>
                   <a class="dropbtn" href="https://fhub.us/emojis">Custom Emojis</a>
                 <div class="dropdown-content">
                     <a href="https://fhub.us/emojis">Custom Emojis</a>
@@ -293,22 +267,45 @@
             </div>
         </ul>
     </nav>
-    <div>
-     <dl class="red">
-    </dl>
-        <dl class="blue">
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th>Light Mode Colour</th>
+            <th>Dark Mode Colour</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Green</th>
+            <td style="background: #a4a980"></td>
+            <td style="background: var(--dgreen)"></td>
+            </tr>
+            <tr>
+                <th>
+                    Blue
+                </th>
+                <td style="background: #a0c0cc"></td>
+                <td style="background: var(--dblue)"></td>
+            </tr>
+            <tr>
+                <th>Red</th>
+                <td style="background: #e9c4b7;"></td>
+                <td style="background: var(--dred);"></td>
+            </tr>
+            <tr>
+                <th>Purple</th>
+                <td style="background: #c7b0cc;"></td>
+                <td style="background: var(--dpurple);"></td>
+            </tr>
+            <tr>
+                <th>Yellow</th>
+                <td style="background: #caa949;"></td>
+                <td style="background: var(--yellow);"></td>
+            </tr>
             
-        </dl>
-        <dl class="purple">
-            
-        </dl>
-        <dl class="orange">
-            
-        </dl>
-        <dl class="green">
-            
-        </dl>
-    </div>
+        </tbody>
+    </table>
 </body>
 
 </html>
