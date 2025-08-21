@@ -1,15 +1,16 @@
 :root {
---nav: 	 	#E0E0E9;
---navHover: 	#D0D0D9;
---white:	#E9E9E0;
---border:	30px;
---red: 	 	#450010;
---subnavHover:	#B9B9B0;
---blue:		#B0FCE3;
---orange:	#FFC999;
---purple:	#C7C4E9;
---green: #d7e3ca;
---greenHover: #c4d0b7;
+--nav:      #e0e0e9;
+--navHover: #D0D0D9;
+--white:    #a4a98040;
+--border:   30px;
+--red:      #e9c4b7;
+--redHover: #d9c4c7;
+--subnavHover:  #B9B9B0;
+--blue:     #a0c0cc;
+--orange:   #caa949;
+--purple:   #c7b0cc;
+--green:    #a4a980c1;
+--greenHover: #a4a980;
         }
 
 #top {
