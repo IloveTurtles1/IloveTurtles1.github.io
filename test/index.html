@@ -14,12 +14,12 @@
 --navHover: #D0D0D9;
 --white:	#a4a98040;
 --border:	30px;
---red: 	 	#d9c4b7;
+--red: 	 	#e9c4b7;
 --redHover: #d9c4c7;
 --subnavHover:	#B9B9B0;
 --blue:		#a0c0cc;
---orange:	#FFC999;
---purple:	#C7C4E9;
+--orange:	#caa949;
+--purple:	#c7b0cc;
 --green: 	#a4a980c1;
 --greenHover: #a4a980;
         }
@@ -28,30 +28,24 @@
             background: white;
             height: 200px;
             width: 25%;
-            margin: 10px;
+            margin: 50px;
             border-radius: var(--border);
             padding: 20px;
             transition-duration: 0.3s;
         }
         
         dl.red {
-            background: var(--red);
-        }
-        
-        dl.red:hover {
-            background: var(--redHover);
+            background: #e9c4b7;
+            box-shadow: 40px 60px var(--red);
         }
         
         dl.green {
             background: var(--green);
         }
 
-        dl.green:hover {
-            background: var(--greenHover);
-        }
-        
         dl.blue {
-            background: var(--blue)
+            background: #a0c0cc;
+            box-shadow: 10px 10px var(--blue);
         }
         
         dl.orange {
@@ -59,7 +53,8 @@
         }
         
         dl.purple {
-            background: var(--purple)
+            background: #c7b0cc;
+            box-shadow: 40px 60px var(--purple);
         }
         
         div {
@@ -77,14 +72,16 @@
         }
         
         @media (prefers-color-scheme: dark) {
-  /* body {
-    background: #a4a980 !important;
+   body {
+    background:  !important;
   } 
            	
             :root {
-                --nav: #b0b0b9 !important;
+                --red: #a9344a !important;
+                --purple: #513141 !important;
+                --yellow: #caa949 !important;
             }
-        } */
+        } 
 
 @media (prefers-reduced-motion: reduce) {
   * {
