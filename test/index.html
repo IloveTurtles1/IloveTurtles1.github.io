@@ -14,14 +14,58 @@
 --navHover: #D0D0D9;
 --white:	#a4a98040;
 --border:	30px;
---red: 	 	#e3d7ca;
---redHover: #d3c2b6;
+--red: 	 	#d9c4b7;
+--redHover: #d9c4c7;
 --subnavHover:	#B9B9B0;
 --blue:		#a0c0cc;
 --orange:	#FFC999;
 --purple:	#C7C4E9;
---green: 	#d7e3ca;
---greenHover: #c4d0b7;
+--green: 	#a4a980c1;
+--greenHover: #a4a980;
+        }
+        
+        dl {
+            background: white;
+            height: 200px;
+            width: 25%;
+            margin: 10px;
+            border-radius: var(--border);
+            padding: 20px;
+            transition-duration: 0.3s;
+        }
+        
+        dl.red {
+            background: var(--red);
+        }
+        
+        dl.red:hover {
+            background: var(--redHover);
+        }
+        
+        dl.green {
+            background: var(--green);
+        }
+
+        dl.green:hover {
+            background: var(--greenHover);
+        }
+        
+        dl.blue {
+            background: var(--blue)
+        }
+        
+        dl.orange {
+            background: var(--orange)
+        }
+        
+        dl.purple {
+            background: var(--purple)
+        }
+        
+        div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
 #top {
@@ -33,14 +77,14 @@
         }
         
         @media (prefers-color-scheme: dark) {
-  body {
+  /* body {
     background: #a4a980 !important;
-  }
+  } 
            	
             :root {
                 --nav: #b0b0b9 !important;
             }
-        }
+        } */
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -166,26 +210,6 @@
          .dropdown-content a:hover {
              background-color: #cbc3c9;
         }
-
-    
-        dl {
-            background: #e9e9e0;
-            height: 200px;
-            width: 25%;
-            margin: -10px;
-            border-radius: var(--border);
-            padding: 20px;
-            transition-duration: 0.3s;
-        }
-        
-        dl:hover {
-            background: #d3c2b6;
-        }
-        
-        div {
-            display: flex;
-            justify-content: center;
-        }
         
     </style>
 </head>
@@ -263,16 +287,20 @@
         </ul>
     </nav>
     <div>
-     <dl>
-        <ol>
-            <li>
-            
-            </li>
-            <li>
-            
-            </li>
-        </ul>
+     <dl class="red">
     </dl>
+        <dl class="blue">
+            
+        </dl>
+        <dl class="purple">
+            
+        </dl>
+        <dl class="orange">
+            
+        </dl>
+        <dl class="green">
+            
+        </dl>
     </div>
 </body>
 
