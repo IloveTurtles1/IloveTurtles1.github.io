@@ -1,4 +1,0 @@
- AuthType Basic
-  AuthName "Secure Content"
-  AuthUserFile /home/myuser/public_html/.htpasswd
-  require valid-user
