@@ -110,6 +110,7 @@
         /* remove duplicate borders on elements with a dropdown */
          body nav ul div li {
              border: none;
+             position: relative;
         }
         
         /* dropdown content (hidden by default) */
@@ -126,6 +127,7 @@
             font-weight: bold;
             transition-duration: 1s;
             border: none;
+            top: 100%;
         }
          
         /* make dropdown visible on hover */
