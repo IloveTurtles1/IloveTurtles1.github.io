@@ -79,6 +79,8 @@
              background: var(--nav);
              border-radius: 30px;
              font-family: cursive;
+             z-index: 1000;
+             position: relative;
         }
             
          nav ul {
@@ -128,6 +130,7 @@
             transition-duration: 1s;
             border: none;
             top: 100%;
+            z-index: 100;
         }
          
         /* make dropdown visible on hover */
@@ -154,3 +157,8 @@
          .dropdown-content a:hover {
              background-color: #cbc3c9;
         }
+
+img {
+    z-index: 1;
+    position: relative;
+}
