@@ -1,5 +1,5 @@
         body {
-            background-color: #450010;
+            background: var(--white);
             font-size: 28px;
             font-family: Americantypewriter;
             text-align: center;
@@ -7,48 +7,48 @@
         }
 
         h1 {
-            color: #6495ed;
             text-align: center;
             font-size: 42px;
             position: sticky;
             top: 1px;
             padding: 50px;
-            background-color: #450010;
             margin: auto;
             z-index: 1;
+            background: #E9E9E0;
         }
 
-        li {
-            color: #6495ed;
-            position: sticky;
+        main li {
+           position: sticky;
             top: 200px;
-            background-color: #450010;
-            height: 100px;
-            padding-top: 100px;
-            padding-bottom: 100px;
-            list-style-position: inside;
+            min-height: 100px;
+            padding-top: 50px;
+            padding-bottom: 50px;
             margin: auto;
+            margin-top: 50px;
+            margin-top: 50px;
+            list-style-position: inside;
             list-style: none;
+            background-color: #E9E9E0;
         }
         
-        ul {
+        main ul {
             padding-bottom: 100px;
         }
         
         
         h4 {
-            position: sticky;
+           position: sticky;
             top: 130px;
             font-size: 25px;
             z-index: 1;
         }
 
         
-        a {
+        main a {
             color: #9495ed;
             text-decoration: none;
         }
 
-        ul:last-child {
+        main ul:last-child {
             padding-bottom: 200px;
         }
