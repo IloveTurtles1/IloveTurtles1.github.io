@@ -3,6 +3,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteRule ^(.*)$ /index.html [R=301,L] 
 
+AddType application/javascript .ts
+
 AuthType Basic
   AuthName "Secure Content"
   AuthUserFile /home/myuser/public_html/.htpasswd
