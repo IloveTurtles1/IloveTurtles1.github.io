@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fhub.us/style.css">
+<style>
+form { max-width: 300px; margin-top: 10%; margin: auto; }
+label { padding: 10px; display: inline-flex; }
+select { margin-bottom: 30px; }
+hr { margin-bottom: 5%; }
+</style>
+</head>
+<body>
+<h1>Create New User</h1><hr>
+<form method="POST" action="/create-user">
+  <label>New Username: <input type="text" name="username" required></label><br>
+  <label>New Password: <input type="password" name="password" required></label><br>
+  <label>Role:
+    <select name="role">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select>
+  </label><br>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
